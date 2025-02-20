@@ -51,9 +51,9 @@ To run the crawler, use the following example:
 from bale_crawler import BaleCrawler
 
 crawler = BaleCrawler(
-    channel_url="https://web.bale.ai/chat?uid=4749803255",
+    channel_url="https://web.bale.ai/chat?uid=",
     browser="edge",  # Options: "edge" or "chrome"
-    user_data_dir=r"C:\Users\pc\AppData\Local\Microsoft\Edge\User Data",  # Optional
+    user_data_dir=r"",  # Optional
     profile_directory="Default"  # Optional
 )
 
@@ -79,12 +79,12 @@ To keep your login session:
 
 Example for Edge:
 
-user_data_dir=r"C:\Users\pc\AppData\Local\Microsoft\Edge\User Data"
+user_data_dir=r""
 profile_directory="Default"
 
 Example for Chrome:
 
-user_data_dir=r"C:\Users\pc\AppData\Local\Google\Chrome\User Data"
+user_data_dir=r""
 profile_directory="Default"
 
 🛠 Troubleshooting
