@@ -1,12 +1,11 @@
 ### **📌 README for `python_Bale_Crawler`**
 
-```markdown
+
 # 🚀 python_Bale_Crawler
 
 **`python_Bale_Crawler`** is a Python script that uses **Selenium** to scrape messages from **Bale Messenger channels**.  
 This tool allows you to **extract all messages from a Bale channel** and save them in **JSON and CSV formats**.
 
----
 
 ## 📌 **Features**
 ✅ **Extracts all messages from a Bale channel**  
@@ -16,7 +15,7 @@ This tool allows you to **extract all messages from a Bale channel** and save th
 ✅ **Saves messages in `JSON` and `CSV` formats**  
 ✅ **No manual intervention required for scrolling**  
 
----
+
 
 ## 🔧 **Requirements**
 Before running this project, make sure you have the following installed:
