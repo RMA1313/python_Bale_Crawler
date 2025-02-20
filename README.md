@@ -1,3 +1,6 @@
+### **📌 README for `python_Bale_Crawler`**
+
+```markdown
 # 🚀 python_Bale_Crawler
 
 **`python_Bale_Crawler`** is a Python script that uses **Selenium** to scrape messages from **Bale Messenger channels**.  
@@ -27,27 +30,34 @@ You can install the required dependencies using:
 
 ```sh
 pip install selenium webdriver-manager pandas
+```
 
-📥 Installation
+---
 
-    Clone this repository:
+## 📥 **Installation**
+1. **Clone this repository**:
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/python_Bale_Crawler.git
+   cd python_Bale_Crawler
+   ```
 
-git clone https://github.com/YOUR_USERNAME/python_Bale_Crawler.git
-cd python_Bale_Crawler
+2. **Set up your Python environment**:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-Set up your Python environment:
+3. **Run the script**:
+   ```sh
+   python main.py
+   ```
 
-pip install -r requirements.txt
+---
 
-Run the script:
-
-    python main.py
-
-🚀 How to Use
-1️⃣ Run the Crawler
-
+## 🚀 **How to Use**
+### **1️⃣ Run the Crawler**
 To run the crawler, use the following example:
 
+```python
 from bale_crawler import BaleCrawler
 
 crawler = BaleCrawler(
@@ -58,62 +68,65 @@ crawler = BaleCrawler(
 )
 
 crawler.run()
+```
 
-2️⃣ Output Files
-
+### **2️⃣ Output Files**
 After execution, the extracted messages will be saved in:
+- `bale_channel_messages.json`
+- `bale_channel_messages.csv`
 
-    bale_channel_messages.json
-    bale_channel_messages.csv
+---
 
-⚙️ Customization
-Change Browser
+## ⚙️ **Customization**
+### **Change Browser**
+Set `browser="chrome"` or `browser="edge"` when initializing `BaleCrawler`.
 
-Set browser="chrome" or browser="edge" when initializing BaleCrawler.
-Use Browser Profile (for Auto Login)
-
+### **Use Browser Profile (for Auto Login)**
 To keep your login session:
+- Set `user_data_dir` to the path of your browser’s profile.
+- Set `profile_directory` to the correct profile name.
 
-    Set user_data_dir to the path of your browser’s profile.
-    Set profile_directory to the correct profile name.
-
-Example for Edge:
-
+Example for **Edge**:
+```python
 user_data_dir=r""
 profile_directory="Default"
+```
 
-Example for Chrome:
-
+Example for **Chrome**:
+```python
 user_data_dir=r""
 profile_directory="Default"
+```
 
-🛠 Troubleshooting
-1️⃣ WebDriver Issues
+---
 
+## 🛠 **Troubleshooting**
+### **1️⃣ WebDriver Issues**
 If WebDriver is not found, update it using:
-
+```sh
 pip install --upgrade webdriver-manager
+```
 
-2️⃣ Bale Login Issues
+### **2️⃣ Bale Login Issues**
+If the script says **"You are not logged in"**, make sure you:
+- Open Bale Web (`https://web.bale.ai/`) in your browser.
+- Login manually.
+- Use the correct browser profile.
 
-If the script says "You are not logged in", make sure you:
+### **3️⃣ No Messages Extracted**
+- Ensure that the **CSS selectors** for messages (`Text_text`) and scrolling container (`Scroller_scroller`) haven't changed.
+- Increase `SCROLL_PAUSE_TIME` in the script if messages take time to load.
 
-    Open Bale Web (https://web.bale.ai/) in your browser.
-    Login manually.
-    Use the correct browser profile.
+---
 
-3️⃣ No Messages Extracted
+## 📜 **License**
+This project is licensed under the **MIT License**.
 
-    Ensure that the CSS selectors for messages (Text_text) and scrolling container (Scroller_scroller) haven't changed.
-    Increase SCROLL_PAUSE_TIME in the script if messages take time to load.
+---
 
-📜 License
-
-This project is licensed under the MIT License.
-🤝 Contributing
-
+## 🤝 **Contributing**
 If you’d like to contribute:
+1. **Fork the repository**
+2. **Create a new branch**
+3. **Submit a pull request (PR)**
 
-    Fork the repository
-    Create a new branch
-    Submit a pull request (PR)
