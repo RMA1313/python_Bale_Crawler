@@ -1,5 +1,3 @@
-### **📌 README for `python_Bale_Crawler`**
-
 
 # 🚀 python_Bale_Crawler
 
